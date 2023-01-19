@@ -3,10 +3,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>home</title>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h4>home</h4>
+	<div class="title-con">
+		<h4>home</h4>
+	</div>
+	
+	<div>
+		<div class="homeb-con">
+			<button type="button"
+					onclick="location.href='articles'">
+				articles
+			</button>
+		</div>
+	</div>
 </body>
 </html>

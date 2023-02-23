@@ -3,9 +3,19 @@
 /* global */
 .field-error { border-color: #dc3545; color: #dc3545; }
 
-.title-con { margin-left: 20px; }
+#hd { width: 100%; height: 60px; display: flex; justify-content: space-between; align-items: center; }
+.hd-tit { padding: 5px 15px; }
+.hd-tit > p { font-weight: bold; margin: 5px; }
+.hd-con { padding: 5px 15px; }
+.hd-con button { width: 80px; margin:5px; }
+
+#ft { width: 100%; height: 180px; }
+.ft-con { padding: 5px 15px; }
+.ft-con > p { margin: 5px; }
 
 /* home */
+#home { width: 100%; height: 720px; }
+
 .homeb-con { padding: 5px 15px; }
 .homeb-con > button { width: 80px; margin: 5px; }
 
@@ -21,15 +31,19 @@
 .addArticlesp-con { width: 360px; }
 
 /* article */
-.article-con { padding: 5px 15px; }
-.article-con > button { width: 120px; margin: 5px; }
+.articlel-con { padding: 5px 15px; }
+.articlel-con > button { width: 120px; margin: 5px; }
 
 .articleb-con { display: flex; padding: 5px 15px; }
 .articleb-con > button { width: 120px; margin: 5px; }
 
 /* articles */
-.articles-con { padding: 5px 15px; }
-.articles-con > table { width: 100%; margin: 15px 0; }
+#articles { width:100%; height: 720px; }
+
+.articlesh-con { padding: 5px 15px; }
+
+.articlest-con { padding: 5px 15px; }
+.articlest-con > table { width: 100%; margin: 15px 0; }
 
 .articlesb-con { display: flex; padding: 5px 15px; }
 .articlesb-con > button { width: 120px; margin: 5px; }

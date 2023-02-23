@@ -9,7 +9,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"com.leolego.board.web"})
+@ComponentScan("com.leolego.board.controller")
+@ComponentScan("com.leolego.board.service")
+@ComponentScan("com.leolego.board.dao")
 public class ServletAppContext implements WebMvcConfigurer {
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {

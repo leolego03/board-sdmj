@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:url var='root' value='/'/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +28,8 @@
 				<tbody>
 					<c:forEach var="article" items="${articles }">
 						<tr>
-							<td><a href="article">${article.id }</a></td>
-			                <td><a href="article">${article.subject }</a></td>
+							<td><a href="articles/article">${article.id }</a></td>
+			                <td><a href="articles/article">${article.subject }</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>
@@ -36,12 +37,12 @@
 		</div>
 		
 		<div class="articlesb-con">
-	        <button onclick="location.href='addArticleForm'"
+	        <button onclick="location.href='articles/addArticleForm'"
 	                type="button">add article</button>
 	    </div>
 	    
 	    <div class="articlesb-con">
-	        <button onclick="location.href='/board-sdmj'"
+	        <button onclick="location.href='${root }'"
 	                type="button">home</button>
 	    </div>
 	</div>

@@ -15,9 +15,40 @@
 
 /* home */
 #home { width: 100%; height: 720px; }
-
 .homeb-con { padding: 5px 15px; }
 .homeb-con > button { width: 80px; margin: 5px; }
+
+/* loginForm */
+#loginForm { width: 100%; height: 720px; }
+.loginFormh-con { padding: 5px 15px; }
+
+.loginFormi-con { padding: 5px 15px; }
+.loginFormi-con > input { width: calc(100% - 20px); margin: 5px; }
+.loginFormi-con > label { display: block; width: 120px; margin: 5px; }
+
+.loginForms-con { display: flex; padding: 5px 15px; }
+.loginForms-con > button { width: 80px; margin: 5px; }
+
+/* signUpForm */
+#signUpForm { width: 100%; height: 720px; }
+.signUpFormh-con { padding: 5px 15px; }
+
+.signUpFormi-con { padding: 5px 15px; }
+.signUpFormi-con > input { width: calc(100% - 20px); margin: 5px; }
+.signUpFormi-con > label { display: block; width: 120px; margin: 5px; }
+
+.signUpForms-con { display: flex; padding: 5px 15px; }
+.signUpForms-con > button { width: 80px; margin: 5px; }
+
+/* articles */
+#articles { width:100%; height: 720px; }
+.articlesh-con { padding: 5px 15px; }
+
+.articlest-con { padding: 5px 15px; }
+.articlest-con > table { width: 100%; margin: 15px 0; }
+
+.articlesb-con { display: flex; padding: 5px 15px; }
+.articlesb-con > button { width: 120px; margin: 5px; }
 
 /* addArticleForm */
 .addArticlei-con { margin: 10px 20px; }
@@ -36,14 +67,3 @@
 
 .articleb-con { display: flex; padding: 5px 15px; }
 .articleb-con > button { width: 120px; margin: 5px; }
-
-/* articles */
-#articles { width:100%; height: 720px; }
-
-.articlesh-con { padding: 5px 15px; }
-
-.articlest-con { padding: 5px 15px; }
-.articlest-con > table { width: 100%; margin: 15px 0; }
-
-.articlesb-con { display: flex; padding: 5px 15px; }
-.articlesb-con > button { width: 120px; margin: 5px; }

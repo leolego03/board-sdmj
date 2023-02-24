@@ -7,25 +7,21 @@ import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 
+import com.leolego.board.domain.Article;
+
 @Repository
 public class ArticleDao {
 
-	public List<Map<String, Object>> findAllDao() {
-		
-		Map<String, Object> article = new HashMap<>();
-		article.put("id", 0L);
-		article.put("subject", "Test article");
-		article.put("content", "I like freestyle the most among swimming methods.");
-		
-		Map<String, Object> article01 = new HashMap<>();
-		article01.put("id", 1L);
-		article01.put("subject", "Test article01");
-		article01.put("content", "The most important thing in swimming is kicking.");
-		
-		List<Map<String, Object>> articles = new ArrayList<>();
-		articles.add(article);
-		articles.add(article01);
-		
-		return articles;
+	private static final Map<Long, Article> staticArticle = new HashMap<>();
+	private static long sequence = 0L;
+	
+	public Article saveDao(Article article) {
+		article.setId(++sequence);
+		staticArticle.put(article.getId(), article);
+		return article;
+	}
+	
+	public List<Article> findAllDao() {		
+		return new ArrayList<>(staticArticle.values());
 	}
 }

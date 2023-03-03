@@ -5,9 +5,8 @@
 
 #hd { width: 100%; height: 60px; display: flex; justify-content: space-between; align-items: center; }
 .hd-tit { padding: 5px 15px; }
-.hd-tit > p { font-weight: bold; margin: 5px; }
 .hd-con { padding: 5px 15px; }
-.hd-con button { width: 80px; margin:5px; }
+.hd-con a { display: inline-block; margin: 0 5px; }
 
 #ft { width: 100%; height: 180px; }
 .ft-con { padding: 5px 15px; }
@@ -16,29 +15,18 @@
 /* home */
 #home { width: 100%; height: 720px; }
 .homeb-con { padding: 5px 15px; }
-.homeb-con > button { width: 80px; margin: 5px; }
+.homeb-con > button { width: 120px; margin: 5px; }
 
-/* loginForm */
-#loginForm { width: 100%; height: 720px; }
-.loginFormh-con { padding: 5px 15px; }
+/* usersForm */
+#users { width: 100%; height: 720px; }
+.usersh-con { padding: 5px 15px; }
 
-.loginFormi-con { padding: 5px 15px; }
-.loginFormi-con > input { width: calc(100% - 20px); margin: 5px; }
-.loginFormi-con > label { display: block; width: 120px; margin: 5px; }
+.usersi-con { padding: 5px 15px; }
+.usersi-con > input { width: calc(100% - 20px); margin: 5px; }
+.usersi-con > label { display: block; width: 120px; margin: 5px; }
 
-.loginForms-con { display: flex; padding: 5px 15px; }
-.loginForms-con > button { width: 80px; margin: 5px; }
-
-/* signUpForm */
-#signUpForm { width: 100%; height: 720px; }
-.signUpFormh-con { padding: 5px 15px; }
-
-.signUpFormi-con { padding: 5px 15px; }
-.signUpFormi-con > input { width: calc(100% - 20px); margin: 5px; }
-.signUpFormi-con > label { display: block; width: 120px; margin: 5px; }
-
-.signUpForms-con { display: flex; padding: 5px 15px; }
-.signUpForms-con > button { width: 80px; margin: 5px; }
+.userss-con { display: flex; padding: 5px 15px; }
+.userss-con > button { width: 120px; margin: 5px; }
 
 /* articles */
 #articles { width:100%; height: 720px; }
@@ -57,7 +45,7 @@
 .addArticlei-con > textarea { width: 100%; height: 720px; resize: none; }
 
 .addArticles-con { display: flex; padding: 5px 15px; }
-.addArticles-con > button { width: 80px; margin: 5px; }
+.addArticles-con > button { width: 120px; margin: 5px; }
 
 .addArticlesp-con { width: 360px; }
 

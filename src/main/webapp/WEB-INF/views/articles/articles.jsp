@@ -37,7 +37,7 @@
 		</div>
 		
 		<div class="articlesb-con">
-	        <button onclick="location.href='articles/addArticleForm'"
+	        <button onclick="location.href='articles/addArticle'"
 	                type="button">add article</button>
 	    </div>
 	    

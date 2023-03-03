@@ -6,39 +6,42 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>loginForm</title>
+	<title>signUpForm</title>
 	<link rel="stylesheet" href="${root }static/css/style.css">
 </head>
 <body>
 	<c:import url="/WEB-INF/views/include/header.jsp"></c:import>
-
-	<div id="loginForm">
-		<div class="loginFormh-con">
-			<h4>loginForm</h4>
-		</div>
 	
-		<form action="login" method="post">
-			
-	        <div class="loginFormi-con">
+	<div id="users">
+		<div class="usersh-con">
+			<h4>signUpForm</h4>
+		</div>
+		
+		<form action="signUp" method="post">
+	        <div class="usersi-con">
 	            <label for="loginId">loginId</label>
 	            <input type="text" id="loginId" placeholder="Enter loginId">
 	        </div>
 	        
-	        <div class="loginFormi-con">
+	        <div class="usersi-con">
 	            <label for="password">password</label>
 	            <input type="password" id="password" placeholder="Enter password">
 	        </div>
+	        
+	        <div class="usersi-con">
+	            <label for="name">name</label>
+	            <input type="text" id="name" placeholder="Enter name">
+	        </div>
 	
-	        <div class="loginForms-con">
-	            <button type="submit">login</button>
+	        <div class="userss-con">
+	            <button type="submit">sign up</button>
 	
 	            <button onclick="location.href='${root }'"
 	                    type="button">cancel</button>
 	        </div>
-			
 		</form>
 	</div>
-
+	
 	<c:import url="/WEB-INF/views/include/footer.jsp"></c:import>
 </body>
 </html>

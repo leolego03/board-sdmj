@@ -8,14 +8,12 @@
 	</div>
 	
 	<div class="hd-con">
-		<button type="button"
-				onclick="location.href='${root }users/loginForm'">
-			login
-		</button>
+		<a href="${root }users/login">login</a>
 		
-		<button type="button"
-				onclick="location.href='${root }users/signUpForm'">
-			sign up
-		</button>
+		<a href="${root }users/signUp">sign up</a>
+		
+		<a href="${root }users/modify">modify user</a>
+
+		<a href="${root }users/logout">logout</a>
 	</div>
 </div>

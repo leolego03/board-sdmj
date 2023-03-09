@@ -25,4 +25,9 @@ public class ArticleController {
 		
 		return "articles/articles";
 	}
+	
+	@GetMapping("/article")
+	public String article() {
+		return "articles/article";
+	}
 }

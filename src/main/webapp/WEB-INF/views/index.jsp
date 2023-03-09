@@ -12,11 +12,34 @@
 	<c:import url="/WEB-INF/views/include/header.jsp"></c:import>
 	
 	<div id="home">
-		<div class="homeb-con">
-			<button type="button"
-					onclick="location.href='articles'">
-				articles
-			</button>
+		<div class="home-arti">
+			<div class="home-arti-con">
+				<h4>articles</h4>
+			</div>
+		
+			<div class="home-arti-con">
+				<table>
+					<thead>
+						<tr>
+							<th>article id</th>
+							<th>subject</th>
+						</tr>
+					</thead>
+					<tbody>
+						<c:forEach var="article" items="${articles }">
+							<tr>
+								<td><a href="articles/article">${article.id }</a></td>
+				                <td><a href="articles/article">${article.subject }</a></td>
+							</tr>
+						</c:forEach>
+					</tbody>
+				</table>
+			</div>
+		    
+		    <div class="home-arti-con">
+		        <button onclick="location.href='articles'"
+		                type="button">more</button>
+		    </div>
 		</div>
 	</div>
 	

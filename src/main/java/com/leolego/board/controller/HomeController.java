@@ -1,14 +1,26 @@
 package com.leolego.board.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.leolego.board.domain.Article;
+import com.leolego.board.service.ArticleService;
 
 @Controller
 public class HomeController {
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home() {
+	@Autowired
+	private ArticleService articleService;
+	
+	@GetMapping
+	public String home(Model model) {
+		List<Article> articles = articleService.findAll();
+		model.addAttribute("articles", articles);
+		
 		return "index";
 	}
 }

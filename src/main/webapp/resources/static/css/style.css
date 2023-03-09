@@ -14,29 +14,25 @@
 
 /* home */
 #home { width: 100%; height: 720px; }
-.homeb-con { padding: 5px 15px; }
-.homeb-con > button { width: 120px; margin: 5px; }
+.home-arti { width: 100%; }
+.home-arti-con { padding: 5px 15px; }
+.home-arti-con > table { width: 100%; margin: 15px 0; }
+.home-arti-con > button { width: 120px; margin: 5px; }
 
-/* usersForm */
-#users { width: 100%; height: 720px; }
-.usersh-con { padding: 5px 15px; }
+/* users */
+#user { width: 100%; height: 720px; }
+.user-con { padding: 5px 15px; }
+.user-con > input { width: calc(100% - 20px); margin: 5px; }
+.user-con > label { display: block; width: 120px; margin: 5px; }
 
-.usersi-con { padding: 5px 15px; }
-.usersi-con > input { width: calc(100% - 20px); margin: 5px; }
-.usersi-con > label { display: block; width: 120px; margin: 5px; }
-
-.userss-con { display: flex; padding: 5px 15px; }
-.userss-con > button { width: 120px; margin: 5px; }
+.user-hori-con { display: flex; padding: 5px 15px; }
+.user-hori-con > button { width: 120px; margin: 5px; }
 
 /* articles */
-#articles { width:100%; height: 720px; }
-.articlesh-con { padding: 5px 15px; }
-
-.articlest-con { padding: 5px 15px; }
-.articlest-con > table { width: 100%; margin: 15px 0; }
-
-.articlesb-con { display: flex; padding: 5px 15px; }
-.articlesb-con > button { width: 120px; margin: 5px; }
+#arti { width: 100%; height: 720px; }
+.arti-con { padding: 5px 15px; }
+.arti-con > table { width: 100%; margin: 15px 0; }
+.arti-con > button { width: 120px; margin: 5px; }
 
 /* addArticleForm */
 .addArticlei-con { margin: 10px 20px; }

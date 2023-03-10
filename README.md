@@ -23,26 +23,3 @@ Dynamic web project for spring framework
 Eclipse:
   Import maven project -> Run as -> Java application / Spring boot app
 ```
-
-#### Manual
-
-1. Articles
-```
-List of articles:
-  articles -> check list of articles
-  
-Details of article:
-  articles -> click on the desired article -> check article details
-  
-Add article:
-  articles -> add article -> enter subject and content -> submit
-```
-
-2. Authentication
-```
-Sign up:
-  sign up -> enter user information -> sign up
-
-Login:
-  login -> enter id and password -> login
-```

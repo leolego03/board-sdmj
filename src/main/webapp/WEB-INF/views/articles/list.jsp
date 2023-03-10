@@ -6,7 +6,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>articles</title>
+	<title>list</title>
 	<link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -28,8 +28,8 @@
 				<tbody>
 					<c:forEach var="article" items="${articles }">
 						<tr>
-							<td><a href="${root }articles/article">${article.id }</a></td>
-			                <td><a href="${root }articles/article">${article.subject }</a></td>
+							<td><a href="${root }articles/view">${article.id }</a></td>
+			                <td><a href="${root }articles/view">${article.subject }</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>
@@ -37,8 +37,8 @@
 		</div>
 		
 		<div class="arti-con">
-	        <button onclick="location.href='articles/addArticle'"
-	                type="button">add article</button>
+	        <button onclick="location.href='articles/write'"
+	                type="button">write</button>
 	    </div>
 	    
 	    <div class="arti-con">

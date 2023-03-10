@@ -28,8 +28,8 @@
 					<tbody>
 						<c:forEach var="article" items="${articles }">
 							<tr>
-								<td><a href="articles/article">${article.id }</a></td>
-				                <td><a href="articles/article">${article.subject }</a></td>
+								<td><a href="articles/view">${article.id }</a></td>
+				                <td><a href="articles/view">${article.subject }</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>

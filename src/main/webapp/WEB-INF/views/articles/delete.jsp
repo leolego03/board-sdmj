@@ -3,6 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="root" value="${pageContext.request.contextPath }/"/>
 <script>
-	alert("You are logged out")
-	location.href = "${root }"
+	alert("Article deleted")
+	location.href = "${root }articles"
 </script>

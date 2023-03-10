@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var='root' value="${pageContext.request.contextPath }/"/>
+<c:set var="root" value="${pageContext.request.contextPath }/"/>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>signUpForm</title>
+	<title>signUp</title>
 	<link rel="stylesheet" href="${root }static/css/style.css">
 </head>
 <body>
@@ -14,13 +14,13 @@
 	
 	<div id="user">
 		<div class="user-con">
-			<h4>signUpForm</h4>
+			<h4>sign up</h4>
 		</div>
 		
-		<form action="signUp" method="post">
+		<form action="${root }" method="get">
 	        <div class="user-con">
-	            <label for="loginId">loginId</label>
-	            <input type="text" id="loginId" placeholder="Enter loginId">
+	            <label for="id">id</label>
+	            <input type="text" id="loginId" placeholder="Enter id">
 	        </div>
 	        
 	        <div class="user-con">

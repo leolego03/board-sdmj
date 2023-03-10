@@ -23,11 +23,26 @@ public class ArticleController {
 		List<Article> articles = articleService.findAll();
 		model.addAttribute("articles", articles);
 		
-		return "articles/articles";
+		return "articles/list";
 	}
 	
-	@GetMapping("/article")
+	@GetMapping("/view")
 	public String article() {
-		return "articles/article";
+		return "articles/view";
+	}
+	
+	@GetMapping("/write")
+	public String write() {
+		return "articles/write";
+	}
+	
+	@GetMapping("/modify")
+	public String modify() {
+		return "articles/modify";
+	}
+	
+	@GetMapping("/delete")
+	public String delete() {
+		return "articles/delete";
 	}
 }

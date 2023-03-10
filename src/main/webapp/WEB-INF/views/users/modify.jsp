@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var='root' value="${pageContext.request.contextPath }/"/>
+<c:set var="root" value="${pageContext.request.contextPath }/"/>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>modify user</title>
+	<title>modify</title>
 	<link rel="stylesheet" href="${root }static/css/style.css">
 </head>
 <body>
@@ -17,16 +17,11 @@
 			<h4>modify user</h4>
 		</div>
 	
-		<form action="modify" method="post">
-
-	        <div class="user-con">
-	            <label for="name">name</label>
-	            <input type="text" id="name" placeholder="Enter name">
-	        </div>
+		<form action="${root }" method="get">
 			
 	        <div class="user-con">
-	            <label for="loginId">loginId</label>
-	            <input type="text" id="loginId" placeholder="Enter loginId">
+	            <label for="id">id</label>
+	            <input type="text" id="id" placeholder="Enter id">
 	        </div>
 	        
 	        <div class="user-con">
@@ -37,6 +32,11 @@
 	        <div class="user-con">
 	            <label for="passwordCheck">password check</label>
 	            <input type="password" id="passwordCheck" placeholder="Enter password again">
+	        </div>
+	        
+	        <div class="user-con">
+	            <label for="name">name</label>
+	            <input type="text" id="name" placeholder="Enter name">
 	        </div>
 	
 	        <div class="user-hori-con">

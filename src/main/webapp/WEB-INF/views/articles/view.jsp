@@ -6,7 +6,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>article</title>
+	<title>view</title>
 	<link rel="stylesheet" href="${root }static/css/style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 	
 	<div id="arti">
 		<div class="arti-con">
-			<h4>article</h4>
+			<h4>article subject</h4>
 		</div>
 		
 		<div class="arti-con">
@@ -23,10 +23,25 @@
 				<li>content: <span>article content</span></li>
 			</ul>
 		</div>
+		
+		<div class="arti-con">
+			<p>file: </p>
+			<img src=""/>
+		</div>
 	
 		<div class="arti-con">
-	        <button onclick="location.href='${root }/articles'"
-	                type="button">articles</button>
+	        <button onclick="location.href='${root }articles'"
+	                type="button">list</button>
+	    </div>
+	    
+	    <div class="arti-con">
+	        <button onclick="location.href='${root }articles/modify'"
+	                type="button">modify</button>
+	    </div>
+	    
+	    <div class="arti-con">
+	        <button onclick="location.href='${root }articles/delete'"
+	                type="button">delete</button>
 	    </div>
 	</div>
 
